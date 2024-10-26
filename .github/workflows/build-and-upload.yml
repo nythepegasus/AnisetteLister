@@ -1,0 +1,112 @@
+name: Build and Upload ${{ inputs.app_name }}
+on:
+  workflow_call:
+    inputs:
+      app_name:
+        description: "Name of the app"
+        required: true
+      version_suffix:
+        description: "Suffix for the version number"
+        required: false
+      change_version:
+        description: "Command to change version in Build.xcconfig"
+        required: true
+      tag_name:
+        description: "Release tag name (for stable builds)"
+        required: false
+      is_stable:
+        description: "Boolean to check if this is a stable release"
+        required: false
+        default: false
+    secrets:
+      GITHUB_TOKEN:
+        required: true
+
+
+jobs:
+  build:
+    name: Build and upload ${{ inputs.app_name }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: 'macos-14'
+            version: '15.4'
+
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Install dependencies
+        run: brew install ldid
+
+      - name: Change version to tag
+        run: ${{ inputs.change_version }}
+
+      - name: Get version
+        id: version
+        run: echo "version=$(grep MARKETING_VERSION Config/Build.xcconfig | sed -e "s/MARKETING_VERSION = //g")" >> $GITHUB_OUTPUT
+
+      - name: Echo version
+        run: echo "${{ steps.version.outputs.version }}"
+
+      - name: Setup Xcode
+        uses: maxim-lobanov/setup-xcode@v1.6.0
+        with:
+          xcode-version: ${{ matrix.version }}
+
+      - name: Cache Build
+        uses: irgaly/xcode-cache@v1
+        with:
+          key: xcode-cache-deriveddata-${{ github.sha }}
+          restore-keys: xcode-cache-deriveddata-
+
+      - name: Build IPA
+        run: make ipa
+
+      - name: Get current date
+        id: date
+        run: echo "date=$(date -u +'%c')" >> $GITHUB_OUTPUT
+
+      - name: Get current date in AltStore date form
+        id: date_altstore
+        run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Upload to new stable release
+        uses: softprops/action-gh-release@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          name: ${{ steps.version.outputs.version }}
+          tag_name: ${{ github.ref_name }}
+          draft: true
+          files: ${{ inputs.app_name }}.ipa
+          body: |
+            ## Changelog
+            
+            - TODO
+            
+            ## Build Info
+            
+            Built at (UTC): `${{ steps.date.outputs.date }}`
+            Built at (UTC date): `${{ steps.date_altstore.outputs.date }}`
+            Commit SHA: `${{ github.sha }}`
+            Version: `${{ steps.version.outputs.version }}`
+
+      - name: Add version to IPA file name
+        run: mv ${{ inputs.app_name }}.ipa ${{ inputs.app_name }}-${{ steps.version.outputs.version }}.ipa
+
+      - name: Upload ipa Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.app_name }}-${{ steps.version.outputs.version }}.ipa
+          path: ${{ inputs.app_name }}-${{ steps.version.outputs.version }}.ipa
+
+      - name: Upload *.dSYM Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.app_name }}-${{ steps.version.outputs.version }}-dSYM
+          path: ./*.dSYM/
+

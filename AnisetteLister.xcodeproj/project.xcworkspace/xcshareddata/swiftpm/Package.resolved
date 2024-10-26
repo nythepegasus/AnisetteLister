@@ -1,0 +1,24 @@
+{
+  "originHash" : "2aa2d95b10bc520f193fec8c9dfc1f006e677b7205b3253f4c8986e59a3dae5a",
+  "pins" : [
+    {
+      "identity" : "defaultable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nythepegasus/Defaultable",
+      "state" : {
+        "revision" : "9f574c2f8ec1aae66f67d56c61edfb2f88b548c2",
+        "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "nydecodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nythepegasus/NYDecodable",
+      "state" : {
+        "revision" : "b617076038e0790bc108d667bc9f1c50d44d494d",
+        "version" : "0.1.2"
+      }
+    }
+  ],
+  "version" : 3
+}

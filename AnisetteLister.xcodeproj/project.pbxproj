@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E83EFD82CDE500800E639C6 /* NYDecodable in Frameworks */ = {isa = PBXBuildFile; productRef = 0E83EFD72CDE500800E639C6 /* NYDecodable */; };
+		0E83EFDA2CDE500800E639C6 /* NYDecodableErrorLoggers in Frameworks */ = {isa = PBXBuildFile; productRef = 0E83EFD92CDE500800E639C6 /* NYDecodableErrorLoggers */; };
+		0E83EFDD2CDE503800E639C6 /* Defaultable in Frameworks */ = {isa = PBXBuildFile; productRef = 0E83EFDC2CDE503800E639C6 /* Defaultable */; };
+		0E83EFDF2CDE503800E639C6 /* DefaultableFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 0E83EFDE2CDE503800E639C6 /* DefaultableFoundation */; };
+		0E83EFE12CDE505E00E639C6 /* NYDecodable in Frameworks */ = {isa = PBXBuildFile; productRef = 0E83EFE02CDE505E00E639C6 /* NYDecodable */; };
+		0E83EFE32CDE505E00E639C6 /* NYDecodableErrorLoggers in Frameworks */ = {isa = PBXBuildFile; productRef = 0E83EFE22CDE505E00E639C6 /* NYDecodableErrorLoggers */; };
+		0E83EFE52CDE505E00E639C6 /* Defaultable in Frameworks */ = {isa = PBXBuildFile; productRef = 0E83EFE42CDE505E00E639C6 /* Defaultable */; };
+		0E83EFE72CDE505E00E639C6 /* DefaultableFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 0E83EFE62CDE505E00E639C6 /* DefaultableFoundation */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E3ACF272CCCCB340069D81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E3ACF0E2CCCCB320069D81C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E3ACF152CCCCB320069D81C;
+			remoteInfo = GetAniList;
+		};
+		0E3ACF312CCCCB340069D81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E3ACF0E2CCCCB320069D81C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E3ACF152CCCCB320069D81C;
+			remoteInfo = GetAniList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E2B763F2CCD1C0B000ED27B /* AnisetteListerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnisetteListerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3ACF162CCCCB320069D81C /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3ACF262CCCCB340069D81C /* AnisetteListerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnisetteListerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3ACF302CCCCB340069D81C /* AnisetteListerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnisetteListerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED7FC862CDE734600106283 /* Build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Build.xcconfig; path = /Users/ny/workspace/GetAniList/AnisetteLister/Misc/Config/Build.xcconfig; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0E83EFED2CDE521400E639C6 /* Exceptions for "Tests" folder in "AnisetteListerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				GetAniListTests/GetAniListTests.swift,
+			);
+			target = 0E3ACF252CCCCB340069D81C /* AnisetteListerTests */;
+		};
+		0E83EFF32CDE522300E639C6 /* Exceptions for "Tests" folder in "AnisetteListerUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				GetAniListUITests/GetAniListUITests.swift,
+				GetAniListUITests/GetAniListUITestsLaunchTests.swift,
+			);
+			target = 0E3ACF2F2CCCCB340069D81C /* AnisetteListerUITests */;
+		};
+		0E83F0042CDE54B000E639C6 /* Exceptions for "Tests" folder in "AnisetteLister" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				GetAniListTests/GetAniListTests.swift,
+				GetAniListUITests/GetAniListUITests.swift,
+				GetAniListUITests/GetAniListUITestsLaunchTests.swift,
+			);
+			target = 0E3ACF152CCCCB320069D81C /* AnisetteLister */;
+		};
+		0E83F0072CDE5A4E00E639C6 /* Exceptions for "AnisetteLister" folder in "AnisetteListerWatch" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				GetAniListApp.swift,
+				Misc/Assets.xcassets,
+				Models/AniList.swift,
+				Views/AniListViews.swift,
+				Views/ContentView.swift,
+				Views/LoadingView.swift,
+			);
+			target = 0E2B763E2CCD1C0B000ED27B /* AnisetteListerWatch */;
+		};
+		0ED7FC852CDE72DB00106283 /* Exceptions for "AnisetteLister" folder in "AnisetteLister" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Misc/Info.plist,
+				"Misc/Preview Content/Preview Assets.xcassets",
+			);
+			target = 0E3ACF152CCCCB320069D81C /* AnisetteLister */;
+		};
+		0ED7FCCB2CDE8B7100106283 /* Exceptions for "Config" folder in "AnisetteLister" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Build.xcconfig,
+				Sign.xcconfig.sample,
+			);
+			target = 0E3ACF152CCCCB320069D81C /* AnisetteLister */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0E3ACF182CCCCB320069D81C /* AnisetteLister */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0ED7FC852CDE72DB00106283 /* Exceptions for "AnisetteLister" folder in "AnisetteLister" target */,
+				0E83F0072CDE5A4E00E639C6 /* Exceptions for "AnisetteLister" folder in "AnisetteListerWatch" target */,
+			);
+			path = AnisetteLister;
+			sourceTree = "<group>";
+		};
+		0E83EFE82CDE520900E639C6 /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0E83F0042CDE54B000E639C6 /* Exceptions for "Tests" folder in "AnisetteLister" target */,
+				0E83EFED2CDE521400E639C6 /* Exceptions for "Tests" folder in "AnisetteListerTests" target */,
+				0E83EFF32CDE522300E639C6 /* Exceptions for "Tests" folder in "AnisetteListerUITests" target */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		0ED7FCCA2CDE8B7100106283 /* Config */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0ED7FCCB2CDE8B7100106283 /* Exceptions for "Config" folder in "AnisetteLister" target */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E2B763C2CCD1C0B000ED27B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E83EFE32CDE505E00E639C6 /* NYDecodableErrorLoggers in Frameworks */,
+				0E83EFE72CDE505E00E639C6 /* DefaultableFoundation in Frameworks */,
+				0E83EFE52CDE505E00E639C6 /* Defaultable in Frameworks */,
+				0E83EFE12CDE505E00E639C6 /* NYDecodable in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3ACF132CCCCB320069D81C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E83EFDA2CDE500800E639C6 /* NYDecodableErrorLoggers in Frameworks */,
+				0E83EFDF2CDE503800E639C6 /* DefaultableFoundation in Frameworks */,
+				0E83EFDD2CDE503800E639C6 /* Defaultable in Frameworks */,
+				0E83EFD82CDE500800E639C6 /* NYDecodable in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3ACF232CCCCB340069D81C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3ACF2D2CCCCB340069D81C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E3ACF0D2CCCCB320069D81C = {
+			isa = PBXGroup;
+			children = (
+				0E3ACF182CCCCB320069D81C /* AnisetteLister */,
+				0ED7FCCA2CDE8B7100106283 /* Config */,
+				0E83EFE82CDE520900E639C6 /* Tests */,
+				0EFE2ECB2CCCD39700145B64 /* Frameworks */,
+				0E3ACF172CCCCB320069D81C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0E3ACF172CCCCB320069D81C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E3ACF162CCCCB320069D81C /* .app */,
+				0E3ACF262CCCCB340069D81C /* AnisetteListerTests.xctest */,
+				0E3ACF302CCCCB340069D81C /* AnisetteListerUITests.xctest */,
+				0E2B763F2CCD1C0B000ED27B /* AnisetteListerWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EFE2ECB2CCCD39700145B64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0E2B763E2CCD1C0B000ED27B /* AnisetteListerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E2B76662CCD1C0D000ED27B /* Build configuration list for PBXNativeTarget "AnisetteListerWatch" */;
+			buildPhases = (
+				0E2B763B2CCD1C0B000ED27B /* Sources */,
+				0E2B763C2CCD1C0B000ED27B /* Frameworks */,
+				0E2B763D2CCD1C0B000ED27B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnisetteListerWatch;
+			packageProductDependencies = (
+				0E83EFE02CDE505E00E639C6 /* NYDecodable */,
+				0E83EFE22CDE505E00E639C6 /* NYDecodableErrorLoggers */,
+				0E83EFE42CDE505E00E639C6 /* Defaultable */,
+				0E83EFE62CDE505E00E639C6 /* DefaultableFoundation */,
+			);
+			productName = "GetAniListWatch Watch App";
+			productReference = 0E2B763F2CCD1C0B000ED27B /* AnisetteListerWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E3ACF152CCCCB320069D81C /* AnisetteLister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E3ACF3A2CCCCB340069D81C /* Build configuration list for PBXNativeTarget "AnisetteLister" */;
+			buildPhases = (
+				0E3ACF122CCCCB320069D81C /* Sources */,
+				0E3ACF132CCCCB320069D81C /* Frameworks */,
+				0E3ACF142CCCCB320069D81C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0E3ACF182CCCCB320069D81C /* AnisetteLister */,
+				0E83EFE82CDE520900E639C6 /* Tests */,
+				0ED7FCCA2CDE8B7100106283 /* Config */,
+			);
+			name = AnisetteLister;
+			packageProductDependencies = (
+				0E83EFD72CDE500800E639C6 /* NYDecodable */,
+				0E83EFD92CDE500800E639C6 /* NYDecodableErrorLoggers */,
+				0E83EFDC2CDE503800E639C6 /* Defaultable */,
+				0E83EFDE2CDE503800E639C6 /* DefaultableFoundation */,
+			);
+			productName = GetAniList;
+			productReference = 0E3ACF162CCCCB320069D81C /* .app */;
+			productType = "com.apple.product-type.application";
+		};
+		0E3ACF252CCCCB340069D81C /* AnisetteListerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E3ACF3D2CCCCB340069D81C /* Build configuration list for PBXNativeTarget "AnisetteListerTests" */;
+			buildPhases = (
+				0E3ACF222CCCCB340069D81C /* Sources */,
+				0E3ACF232CCCCB340069D81C /* Frameworks */,
+				0E3ACF242CCCCB340069D81C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E3ACF282CCCCB340069D81C /* PBXTargetDependency */,
+			);
+			name = AnisetteListerTests;
+			packageProductDependencies = (
+			);
+			productName = GetAniListTests;
+			productReference = 0E3ACF262CCCCB340069D81C /* AnisetteListerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0E3ACF2F2CCCCB340069D81C /* AnisetteListerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E3ACF402CCCCB340069D81C /* Build configuration list for PBXNativeTarget "AnisetteListerUITests" */;
+			buildPhases = (
+				0E3ACF2C2CCCCB340069D81C /* Sources */,
+				0E3ACF2D2CCCCB340069D81C /* Frameworks */,
+				0E3ACF2E2CCCCB340069D81C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E3ACF322CCCCB340069D81C /* PBXTargetDependency */,
+			);
+			name = AnisetteListerUITests;
+			packageProductDependencies = (
+			);
+			productName = GetAniListUITests;
+			productReference = 0E3ACF302CCCCB340069D81C /* AnisetteListerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0E3ACF0E2CCCCB320069D81C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					0E2B763E2CCD1C0B000ED27B = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					0E3ACF152CCCCB320069D81C = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					0E3ACF252CCCCB340069D81C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 0E3ACF152CCCCB320069D81C;
+					};
+					0E3ACF2F2CCCCB340069D81C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 0E3ACF152CCCCB320069D81C;
+					};
+				};
+			};
+			buildConfigurationList = 0E3ACF112CCCCB320069D81C /* Build configuration list for PBXProject "AnisetteLister" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0E3ACF0D2CCCCB320069D81C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0E83EFD62CDE500800E639C6 /* XCRemoteSwiftPackageReference "NYDecodable" */,
+				0E83EFDB2CDE503800E639C6 /* XCRemoteSwiftPackageReference "Defaultable" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0E3ACF172CCCCB320069D81C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0E3ACF152CCCCB320069D81C /* AnisetteLister */,
+				0E3ACF252CCCCB340069D81C /* AnisetteListerTests */,
+				0E3ACF2F2CCCCB340069D81C /* AnisetteListerUITests */,
+				0E2B763E2CCD1C0B000ED27B /* AnisetteListerWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0E2B763D2CCD1C0B000ED27B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3ACF142CCCCB320069D81C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3ACF242CCCCB340069D81C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3ACF2E2CCCCB340069D81C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E2B763B2CCD1C0B000ED27B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3ACF122CCCCB320069D81C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3ACF222CCCCB340069D81C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3ACF2C2CCCCB340069D81C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E3ACF282CCCCB340069D81C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E3ACF152CCCCB320069D81C /* AnisetteLister */;
+			targetProxy = 0E3ACF272CCCCB340069D81C /* PBXContainerItemProxy */;
+		};
+		0E3ACF322CCCCB340069D81C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E3ACF152CCCCB320069D81C /* AnisetteLister */;
+			targetProxy = 0E3ACF312CCCCB340069D81C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E2B76672CCD1C0D000ED27B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_KEY_CFBundleDisplayName = GetAniListWatch;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(WATCHOS_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		0E2B76682CCD1C0D000ED27B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_KEY_CFBundleDisplayName = GetAniListWatch;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = NO;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(WATCHOS_BUNDLE_IDENTIFIER)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
+		0E3ACF382CCCCB340069D81C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_VARIANTS = normal;
+				"BUILD_VARIANTS[sdk=iphonesimulator*]" = normal;
+				"BUILD_VARIANTS[sdk=watchsimulator*]" = normal;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = AnisetteLister/Misc/AnisetteLister.entitlements;
+				CODE_SIGN_IDENTITY = "$(CODE_SIGN_IDENTITY)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_VERSION = dwarf5;
+				DEVELOPMENT_ASSET_PATHS = "\"AnisetteLister/Misc/Preview Content\"";
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.4;
+				EAGER_LINKING = YES;
+				ENABLE_DEBUG_DYLIB = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FUSE_BUILD_SCRIPT_PHASES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Anisette Lister";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSStickerSharingLevel = OS;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LLVM_LTO = YES_THIN;
+				"LLVM_LTO[sdk=appletvsimulator*]" = NO;
+				"LLVM_LTO[sdk=iphonesimulator*]" = NO;
+				"LLVM_LTO[sdk=watchsimulator*]" = NO;
+				"LLVM_LTO[sdk=xrsimulator*]" = NO;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TVOS_DEPLOYMENT_TARGET = 15.6;
+				VERSIONING_SYSTEM = "apple-generic";
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+				XROS_DEPLOYMENT_TARGET = 1.3;
+			};
+			name = Debug;
+		};
+		0E3ACF392CCCCB340069D81C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_VARIANTS = normal;
+				"BUILD_VARIANTS[sdk=*]" = normal;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = AnisetteLister/Misc/AnisetteLister.entitlements;
+				CODE_SIGN_IDENTITY = "$(CODE_SIGN_IDENTITY)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_VERSION = dwarf5;
+				DEVELOPMENT_ASSET_PATHS = "\"AnisetteLister/Misc/Preview Content\"";
+				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
+				DRIVERKIT_DEPLOYMENT_TARGET = 20.4;
+				EAGER_LINKING = YES;
+				ENABLE_DEBUG_DYLIB = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FUSE_BUILD_SCRIPT_PHASES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Anisette Lister";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSStickerSharingLevel = OS;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LLVM_LTO = YES;
+				"LLVM_LTO[sdk=appletvsimulator*]" = NO;
+				"LLVM_LTO[sdk=iphonesimulator*]" = NO;
+				"LLVM_LTO[sdk=watchsimulator*]" = NO;
+				"LLVM_LTO[sdk=xrsimulator*]" = NO;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				PRODUCT_NAME = "$(PRODUCT_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "xrsimulator xros watchsimulator watchos macosx iphonesimulator iphoneos driverkit appletvsimulator appletvos";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TVOS_DEPLOYMENT_TARGET = 15.6;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				WATCHOS_DEPLOYMENT_TARGET = 8.7;
+				XROS_DEPLOYMENT_TARGET = 1.3;
+			};
+			name = Release;
+		};
+		0E3ACF3B2CCCCB340069D81C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AnisetteLister/Misc/Info.plist;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+			};
+			name = Debug;
+		};
+		0E3ACF3C2CCCCB340069D81C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AnisetteLister/Misc/Info.plist;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
+			};
+			name = Release;
+		};
+		0E3ACF3E2CCCCB340069D81C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EU74F4WL9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ny.GetAniListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnisetteLister.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AnisetteLister";
+			};
+			name = Debug;
+		};
+		0E3ACF3F2CCCCB340069D81C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EU74F4WL9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ny.GetAniListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnisetteLister.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AnisetteLister";
+			};
+			name = Release;
+		};
+		0E3ACF412CCCCB340069D81C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EU74F4WL9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ny.GetAniListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GetAniList;
+			};
+			name = Debug;
+		};
+		0E3ACF422CCCCB340069D81C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = EU74F4WL9R;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ny.GetAniListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GetAniList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E2B76662CCD1C0D000ED27B /* Build configuration list for PBXNativeTarget "AnisetteListerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E2B76672CCD1C0D000ED27B /* Debug */,
+				0E2B76682CCD1C0D000ED27B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E3ACF112CCCCB320069D81C /* Build configuration list for PBXProject "AnisetteLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3ACF382CCCCB340069D81C /* Debug */,
+				0E3ACF392CCCCB340069D81C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E3ACF3A2CCCCB340069D81C /* Build configuration list for PBXNativeTarget "AnisetteLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3ACF3B2CCCCB340069D81C /* Debug */,
+				0E3ACF3C2CCCCB340069D81C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E3ACF3D2CCCCB340069D81C /* Build configuration list for PBXNativeTarget "AnisetteListerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3ACF3E2CCCCB340069D81C /* Debug */,
+				0E3ACF3F2CCCCB340069D81C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E3ACF402CCCCB340069D81C /* Build configuration list for PBXNativeTarget "AnisetteListerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3ACF412CCCCB340069D81C /* Debug */,
+				0E3ACF422CCCCB340069D81C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E83EFD62CDE500800E639C6 /* XCRemoteSwiftPackageReference "NYDecodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nythepegasus/NYDecodable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+		0E83EFDB2CDE503800E639C6 /* XCRemoteSwiftPackageReference "Defaultable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nythepegasus/Defaultable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E83EFD72CDE500800E639C6 /* NYDecodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E83EFD62CDE500800E639C6 /* XCRemoteSwiftPackageReference "NYDecodable" */;
+			productName = NYDecodable;
+		};
+		0E83EFD92CDE500800E639C6 /* NYDecodableErrorLoggers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E83EFD62CDE500800E639C6 /* XCRemoteSwiftPackageReference "NYDecodable" */;
+			productName = NYDecodableErrorLoggers;
+		};
+		0E83EFDC2CDE503800E639C6 /* Defaultable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E83EFDB2CDE503800E639C6 /* XCRemoteSwiftPackageReference "Defaultable" */;
+			productName = Defaultable;
+		};
+		0E83EFDE2CDE503800E639C6 /* DefaultableFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E83EFDB2CDE503800E639C6 /* XCRemoteSwiftPackageReference "Defaultable" */;
+			productName = DefaultableFoundation;
+		};
+		0E83EFE02CDE505E00E639C6 /* NYDecodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E83EFD62CDE500800E639C6 /* XCRemoteSwiftPackageReference "NYDecodable" */;
+			productName = NYDecodable;
+		};
+		0E83EFE22CDE505E00E639C6 /* NYDecodableErrorLoggers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E83EFD62CDE500800E639C6 /* XCRemoteSwiftPackageReference "NYDecodable" */;
+			productName = NYDecodableErrorLoggers;
+		};
+		0E83EFE42CDE505E00E639C6 /* Defaultable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E83EFDB2CDE503800E639C6 /* XCRemoteSwiftPackageReference "Defaultable" */;
+			productName = Defaultable;
+		};
+		0E83EFE62CDE505E00E639C6 /* DefaultableFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E83EFDB2CDE503800E639C6 /* XCRemoteSwiftPackageReference "Defaultable" */;
+			productName = DefaultableFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0E3ACF0E2CCCCB320069D81C /* Project object */;
+}

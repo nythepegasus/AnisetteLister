@@ -1,0 +1,17 @@
+name: Build Stable AnisetteLister
+on:
+  push:
+    tags:
+      - '[0-9]+.[0-9]+.[0-9]+' # example: 1.0.0
+
+jobs:
+  build:
+    uses: ./.github/workflows/build-and-upload.yml
+    with:
+      app_name: AnisetteLister
+      change_version: |
+        sed -e '/MARKETING_VERSION = .*/s/= .*/= ${{ github.ref_name }}/' -i '' Config/Base.xcconfig
+      tag_name: ${{ github.ref_name }}
+      is_stable: true
+  secrets:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
