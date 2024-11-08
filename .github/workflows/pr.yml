@@ -11,6 +11,4 @@ jobs:
       change_version: |
         sed -e "/MARKETING_VERSION = .*/s/\$/-pr.${{ github.event.pull_request.number }}+$(git rev-parse --short ${COMMIT:-HEAD})/" -i '' Config/Base.xcconfig
       version_suffix: "-pr.${{ github.event.pull_request.number }}+$(git rev-parse --short ${COMMIT:-HEAD})"
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

@@ -13,5 +13,3 @@ jobs:
         sed -e '/MARKETING_VERSION = .*/s/= .*/= ${{ github.ref_name }}/' -i '' Config/Base.xcconfig
       tag_name: ${{ github.ref_name }}
       is_stable: true
-  secrets:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
