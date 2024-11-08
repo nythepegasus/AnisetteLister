@@ -1,4 +1,7 @@
 name: Nightly AnisetteLister build
+permissions:
+  contents: write
+  discussions: write
 on:
   push:
     branches:
@@ -22,12 +25,14 @@ jobs:
           id: date_altstore
           run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
   build:
+    needs: prebuild
     uses: ./.github/workflows/build-and-upload.yml
     with:
       app_name: AnisetteLister
       change_version: bash .github/workflows/increase-nightly-build-num.sh
       is_stable: false
   postbuild:
+    needs: [prebuild, build]
     runs-on: macos-14
     steps:  
         - name: Upload to nightly release
