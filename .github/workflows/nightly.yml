@@ -5,12 +5,6 @@ on:
       - main
 
 jobs:
-  build:
-    uses: ./.github/workflows/build-and-upload.yml
-    with:
-      app_name: AnisetteLister
-      change_version: bash .github/workflows/increase-nightly-build-num.sh
-      is_stable: false
   prebuild:
     runs-on: macos-14
     steps:
@@ -27,7 +21,15 @@ jobs:
         - name: Get current date in AltStore date form
           id: date_altstore
           run: echo "date=$(date -u +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-  
+  build:
+    uses: ./.github/workflows/build-and-upload.yml
+    with:
+      app_name: AnisetteLister
+      change_version: bash .github/workflows/increase-nightly-build-num.sh
+      is_stable: false
+  postbuild:
+    runs-on: macos-14
+    steps:  
         - name: Upload to nightly release
           uses: IsaacShelton/update-existing-release@v1.3.1
           with:
