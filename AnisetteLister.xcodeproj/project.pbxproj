@@ -36,10 +36,9 @@
 
 /* Begin PBXFileReference section */
 		0E2B763F2CCD1C0B000ED27B /* AnisetteListerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnisetteListerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E3ACF162CCCCB320069D81C /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3ACF162CCCCB320069D81C /* AnisetteLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnisetteLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E3ACF262CCCCB340069D81C /* AnisetteListerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnisetteListerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E3ACF302CCCCB340069D81C /* AnisetteListerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnisetteListerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ED7FC862CDE734600106283 /* Build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Build.xcconfig; path = /Users/ny/workspace/GetAniList/AnisetteLister/Misc/Config/Build.xcconfig; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -181,7 +180,7 @@
 		0E3ACF172CCCCB320069D81C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E3ACF162CCCCB320069D81C /* .app */,
+				0E3ACF162CCCCB320069D81C /* AnisetteLister.app */,
 				0E3ACF262CCCCB340069D81C /* AnisetteListerTests.xctest */,
 				0E3ACF302CCCCB340069D81C /* AnisetteListerUITests.xctest */,
 				0E2B763F2CCD1C0B000ED27B /* AnisetteListerWatch.app */,
@@ -247,7 +246,7 @@
 				0E83EFDE2CDE503800E639C6 /* DefaultableFoundation */,
 			);
 			productName = GetAniList;
-			productReference = 0E3ACF162CCCCB320069D81C /* .app */;
+			productReference = 0E3ACF162CCCCB320069D81C /* AnisetteLister.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0E3ACF252CCCCB340069D81C /* AnisetteListerTests */ = {
@@ -420,7 +419,8 @@
 /* Begin XCBuildConfiguration section */
 		0E2B76672CCD1C0D000ED27B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			baseConfigurationReferenceAnchor = 0ED7FCCA2CDE8B7100106283 /* Config */;
+			baseConfigurationReferenceRelativePath = Build.xcconfig;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_KEY_CFBundleDisplayName = GetAniListWatch;
@@ -437,7 +437,8 @@
 		};
 		0E2B76682CCD1C0D000ED27B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			baseConfigurationReferenceAnchor = 0ED7FCCA2CDE8B7100106283 /* Config */;
+			baseConfigurationReferenceRelativePath = Build.xcconfig;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_KEY_CFBundleDisplayName = GetAniListWatch;
@@ -454,7 +455,8 @@
 		};
 		0E3ACF382CCCCB340069D81C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			baseConfigurationReferenceAnchor = 0ED7FCCA2CDE8B7100106283 /* Config */;
+			baseConfigurationReferenceRelativePath = Build.xcconfig;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = NO;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -562,7 +564,8 @@
 		};
 		0E3ACF392CCCCB340069D81C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			baseConfigurationReferenceAnchor = 0ED7FCCA2CDE8B7100106283 /* Config */;
+			baseConfigurationReferenceRelativePath = Build.xcconfig;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -662,7 +665,8 @@
 		};
 		0E3ACF3B2CCCCB340069D81C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			baseConfigurationReferenceAnchor = 0ED7FCCA2CDE8B7100106283 /* Config */;
+			baseConfigurationReferenceRelativePath = Build.xcconfig;
 			buildSettings = {
 				INFOPLIST_FILE = AnisetteLister/Misc/Info.plist;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
@@ -671,7 +675,8 @@
 		};
 		0E3ACF3C2CCCCB340069D81C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ED7FC862CDE734600106283 /* Build.xcconfig */;
+			baseConfigurationReferenceAnchor = 0ED7FCCA2CDE8B7100106283 /* Config */;
+			baseConfigurationReferenceRelativePath = Build.xcconfig;
 			buildSettings = {
 				INFOPLIST_FILE = AnisetteLister/Misc/Info.plist;
 				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx xros xrsimulator";
