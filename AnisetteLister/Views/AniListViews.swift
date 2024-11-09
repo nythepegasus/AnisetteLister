@@ -95,10 +95,9 @@ extension AnisetteServerList {
                 let computedHashString = computedHash.compactMap { String(format: "%02x", $0) }.joined()
                 print("Hashes match: \(computedHashString) == \(hash)")
                 print("Hashes match: \(computedHashString == hash)")
+                self = try AnisetteServerList(json: data)
                 if computedHashString != hash {
-                    self = .init(servers: [AnisetteServer(name: "Invalid Hash :(", address: "https://ani.sidestore.io")])
-                } else {
-                    self = try JSONDecoder().decode(AnisetteServerList.self, from: data)
+                    servers.insert(AnisetteServer(name: "Invalid Hash :(", address: "https://ani.sidestore.io"), at: 0)
                 }
             }
         } catch {

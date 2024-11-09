@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+import Defaultable
+
 struct ContentView: View {
     @State
     var serverList: AnisetteServerList = AnisetteServerList()
@@ -27,8 +29,7 @@ struct ContentView: View {
     
     func fetchServers() async {
         print("Fetching server list from \(url)")
-        print("URL hash: \(await serverList.getHash(URL(string: "https://s.nythepegas.us/h")!))")
-        serverList = await AnisetteServerList(URL(string: url)!)
+        serverList = await AnisetteServerList(URL(string: url)~)
     }
 }
 

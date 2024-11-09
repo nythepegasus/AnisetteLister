@@ -10,11 +10,18 @@ import Foundation
 import SwiftUI
 
 import Defaultable
-import DefaultableFoundation
 import NYDecodable
 import NYDecodableErrorLoggers
 
-public struct AnisetteServer: Codable, Hashable, Identifiable, Defaultable, NYErrorLogger {
+extension String: @retroactive Defaultable {
+    static public var DV: String { "" }
+}
+
+extension URL: @retroactive  Defaultable {
+    static public var DV: URL { URL(string: "https://s.nythepegas.us/servers.json")! }
+}
+
+public struct AnisetteServer: NYDecodable, Hashable, Identifiable, Defaultable, HasErrorLogger {
     public static var DV: AnisetteServer { .init(name: "SideStore", address: "https://ani.sidestore.io") }
     
     public var id: UUID = .init()
@@ -39,7 +46,7 @@ public struct AnisetteServer: Codable, Hashable, Identifiable, Defaultable, NYEr
 }
 
 
-public struct AnisetteServerList: Codable, Hashable, Identifiable, Defaultable, NYErrorLogger {
+public struct AnisetteServerList: NYDecodable, Hashable, Identifiable, Defaultable, HasErrorLogger {
     public static var DV: AnisetteServerList { .init(servers: Array(repeating: .DV, count: 10)) }
     
     public var id: UUID = .init()
